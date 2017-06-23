@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>백그라운드 예제</title>
+<style type="text/css">
+body {
+	margin:0;
+	padding:0;
+	background-color:#fff;
+	
+}
+
+
+#logo{
+	
+	background-image: url('/wp_ch3/images/naver.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width : 202px;
+	height : 57px;
+	
+	background-color: #eee;
+	font-size: 0;
+
+}
+
+p strong, p span{
+
+	/* span은 백그라운드가 적용되지 않기 때문에 블락으로 바꿔줘야함  */
+
+	display: block;	
+
+
+}
+
+p {
+
+	background-color!: #aaa;
+ /*	padding-left: 20px; */
+	margin-left: 20px;
+
+}
+
+.qr-code{
+
+	width: 50px;
+	height: 50px;
+	font-size: 0;
+	
+	margin-top: 28px;
+	background-image: url('/wp_ch3/images/naver.png');
+	background-repeat: no-repeat;
+	background-position: -60px -67px;
+	background-color!: #f00;
+	/*
+	bacnground: url('/wp_ch3/images/naver.png') -60px(L) -67px(T)  no-repeat #f00
+	*/
+}
+
+</style>
+</head>
+
+<body>
+<h1 id="logo">네이버</h1>
+
+<p>
+	<strong>OR 코드</strong>
+	
+	<span class="qr-code">네이버 QR 코드 </span>
+
+</p>
+</body>
+</html>
